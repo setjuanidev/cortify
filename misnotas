@@ -1,0 +1,45 @@
+frontend/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── hooks/
+│   ├── context/
+│   ├── utils/
+│   ├── assets/
+│   ├── App.jsx          ← componente raíz de React
+│   └── main.jsx         ← punto de entrada, donde React "engancha" al HTML
+├── public/
+├── index.html            ← el único HTML de toda la app
+├── package.json          ← acá aparece "react" y "react-dom" como dependencias
+├── vite.config.js        ← configuración del bundler
+└── .gitignore            (o compartido con el de la raíz)
+
+---------------------------------------------------------------------
+backend/
+├── src/
+│   ├── routes/
+│   │   ├── auth.routes.js
+│   │   ├── business.routes.js
+│   │   └── booking.routes.js
+│   ├── controllers/
+│   │   ├── auth.controller.js
+│   │   ├── business.controller.js
+│   │   └── booking.controller.js
+│   ├── models/
+│   │   ├── Business.js
+│   │   ├── Employee.js
+│   │   ├── Service.js
+│   │   ├── Booking.js
+│   │   └── Client.js
+│   ├── middlewares/
+│   │   └── auth.middleware.js
+│   ├── services/
+│   │   └── availability.service.js
+│   ├── config/
+│   │   └── db.js
+│   └── server.js
+├── .env                    ← nunca se sube (va en .gitignore)
+├── .env.example            ← sí se sube, como plantilla sin datos reales
+├── package.json
+└── node_modules/            ← ignorado por git
